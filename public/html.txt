@@ -1,6 +1,6 @@
 body
     .root
-        .navbar
+        .navbar(OK)
             .container
                 .logo
                     ion-icon
@@ -20,15 +20,15 @@ body
                 .icones-mobile
                     ion-icon
         
-        .corpo
-            .esquerda
-                .stories
-                    .story (x8)
+        .corpo(on)
+            .esquerda(on)
+                .stories(OK)
+                    .story(x8)(OK)
                         .imagem
                             img
                         .usuario
                             name
-                    .setinha
+                    .setinha(OK)
                         ion-icon
                 .posts
                     .post(x2)
