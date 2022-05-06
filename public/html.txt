@@ -1,0 +1,77 @@
+body
+    .root
+        .navbar
+            .container
+                .logo
+                    ion-icon
+                    .separador
+                    img
+                .logo-mobile
+                    ion-icon
+                .instagram-mobile
+                    img
+                .pesquisa
+                    input
+                .icones
+                    ion-icon
+                    ion-icon
+                    ion-icon
+                    ion-icon
+                .icones-mobile
+                    ion-icon
+        
+        .corpo
+            .esquerda
+                .stories
+                    .story (x8)
+                        .imagem
+                            img
+                        .usuario
+                            name
+                    .setinha
+                        ion-icon
+                .posts
+                    .post(x2)
+                        .topo
+                            .usuario
+                                img
+                                name
+                            .acoes
+                                ion-icon
+                        .conteúdo
+                            img
+                        .fundo
+                            .acoes
+                                div
+                                    ion-icon
+                                    ion-icon
+                                    ion-icon
+                                div
+                                    ion-icon
+                            .curtidas
+                                img
+                                .texto
+                                    texto
+            .side-bar
+                .usuario
+                    img
+                    .texto
+                        strong
+                        name
+                .sugestoes
+                    .titulo
+                    .sugestao (x5)
+                        .usuario
+                            img
+                            .texto
+                                .nome
+                                .razao
+                        .seguir
+                .links
+                    texto
+                .copyright
+                    texto
+        
+        .fundo-mobile
+            ion-icon (x5)
+    script
