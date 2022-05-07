@@ -1,12 +1,31 @@
-import Stories from "./Stories"
+import Post from "./Post";
 
-export default function Esquerda() {
-    return(
-        <div class="esquerda">
-            <Stories />
+export default function Posts() {
 
-            <div class="posts">
-                <div class="post">
+    const posts = [
+        {topo: {img: "assets/img/meowed.svg", 
+                nome: "meowed"},
+        conteudo: {src: "assets/img/gato-telefone.svg"},
+        fundo: {img: "assets/img/respondeai.svg", 
+                curtidas: "Curtido por <strong>respondeai</strong> e <strong>outras 101.523 pessoas</strong>"}},
+        
+        {topo: {img: "assets/img/barked.svg", 
+        nome: "barked"},
+        conteudo: {src: "assets/img/dog.svg"},
+        fundo: {img: "assets/img/adorable_animals.svg", 
+                curtidas: "Curtido por <strong>adorable_animals</strong> e <strong>outras 99.159 pessoas</strong>"}}
+    ];
+
+    return (
+        <div class="posts">
+            <Post
+            imgTopo="assets/img/barked.svg"
+            nomeTopo="barked"
+            srcConteudo="assets/img/dog.svg"
+            imgCurtida="assets/img/adorable_animals.svg"
+            txtCurtida="Curtido por <strong>adorable_animals</strong> e <strong>outras 99.159 pessoas</strong>"/>
+
+            <div class="post">
                 <div class="topo">
                     <div class="usuario">
                     <img src="assets/img/meowed.svg" />
@@ -40,9 +59,9 @@ export default function Esquerda() {
                     </div>
                     </div>
                 </div>
-                </div>
+            </div>
 
-                <div class="post">
+            <div class="post">
                 <div class="topo">
                     <div class="usuario">
                     <img src="assets/img/barked.svg" />
@@ -76,8 +95,7 @@ export default function Esquerda() {
                     </div>
                     </div>
                 </div>
-                </div>
             </div>
         </div>
-    );
+);
 }

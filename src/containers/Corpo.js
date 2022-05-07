@@ -1,4 +1,4 @@
-import Esquerda from "../Components/Esquerda";
+import Esquerda from "../components/Esquerda";
 
 export default function Corpo() {
     return (

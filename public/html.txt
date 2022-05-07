@@ -30,7 +30,7 @@ body
                             name
                     .setinha(OK)
                         ion-icon
-                .posts
+                .posts(on)
                     .post(x2)
                         .topo
                             .usuario

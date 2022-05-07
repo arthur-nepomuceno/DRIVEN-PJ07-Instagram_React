@@ -1,9 +1,9 @@
-import Logo from "../Components/Logo";
-import LogoMobile from "../Components/LogoMobile"
-import InstagramMobile from "../Components/InstagramMobile"
-import Pesquisa from "../Components/Pesquisa";
-import Icones from "../Components/Icones";
-import IconesMobile from "../Components/IconesMobile";
+import Logo from "../components/Logo";
+import LogoMobile from "../components/LogoMobile"
+import InstagramMobile from "../components/InstagramMobile"
+import Pesquisa from "../components/Pesquisa";
+import Icones from "../components/Icones";
+import IconesMobile from "../components/IconesMobile";
 
 export default function NavBar(){
     return (

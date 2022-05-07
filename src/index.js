@@ -1,7 +1,7 @@
 import reactDom from "react-dom";
-import NavBar from "./Containers/NavBar";
-import Corpo from "./Containers/Corpo";
-import FundoMobile from "./Containers/FundoMobile";
+import NavBar from "./containers/NavBar";
+import Corpo from "./containers/Corpo";
+import FundoMobile from "./containers/FundoMobile";
 
 const body = document.querySelector("body");
 
