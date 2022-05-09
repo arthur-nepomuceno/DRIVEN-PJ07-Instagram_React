@@ -20,8 +20,8 @@ body
                 .icones-mobile
                     ion-icon
         
-        .corpo(on)
-            .esquerda(on)
+        .corpo(OK)
+            .esquerda(OK)
                 .stories(OK)
                     .story(x8)(OK)
                         .imagem
@@ -30,7 +30,7 @@ body
                             name
                     .setinha(OK)
                         ion-icon
-                .posts(on)
+                .posts(OK)
                     .post(x2)
                         .topo
                             .usuario
@@ -52,13 +52,13 @@ body
                                 img
                                 .texto
                                     texto
-            .side-bar
-                .usuario
+            .side-bar(OK)
+                .usuario(OK)
                     img
                     .texto
                         strong
                         name
-                .sugestoes
+                .sugestoes(OK)
                     .titulo
                     .sugestao (x5)
                         .usuario
@@ -67,11 +67,11 @@ body
                                 .nome
                                 .razao
                         .seguir
-                .links
+                .links(OK)
                     texto
-                .copyright
+                .copyright(OK)
                     texto
         
-        .fundo-mobile
+        .fundo-mobile(OK)
             ion-icon (x5)
     script

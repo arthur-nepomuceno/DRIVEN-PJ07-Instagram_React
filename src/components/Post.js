@@ -1,6 +1,26 @@
-import Acoes from "./Acoes";
+import React from "react";
 
 export default function Post(props) {
+
+    const [iconName, setIconName] = React.useState("heart-outline")
+    const [iconId, setIconId] = React.useState("");
+
+    function ButtonLike() {
+        if(iconName === "heart-outline"){
+            setIconName("heart");
+            setIconId("red");
+        } else if (iconName === "heart"){
+            setIconName("heart-outline");
+            setIconId("");
+        }
+    }
+
+    function ContentLike() {
+        if(iconName === "heart-outline"){
+            setIconName("heart");
+            setIconId("red");
+        }
+    }
     
     return (
         <div class="post">
@@ -15,16 +35,25 @@ export default function Post(props) {
             </div>
 
             <div class="conteudo">
-                <img src={props.srcConteudo} />
+                <img src={props.srcConteudo} onClick={ContentLike}/>
             </div>
 
             <div class="fundo">
-                <Acoes />
+                <div class="acoes">
+                    <div>
+                        <ion-icon name={iconName} id={iconId} onClick={ButtonLike}></ion-icon>
+                        <ion-icon name="chatbubble-outline"></ion-icon>
+                        <ion-icon name="paper-plane-outline"></ion-icon>
+                    </div>
+                    <div>
+                        <ion-icon name="bookmark-outline"></ion-icon>
+                    </div>
+                </div>
 
                 <div class="curtidas">
                 <img src={props.imgCurtida} />
                 <div class="texto">
-                    {props.txtCurtida}
+                    Curtido por <strong>{props.nomeCurtida}</strong> e <strong>outras {props.numCurtida} pessoas</strong>
                 </div>
                 </div>
             </div>
