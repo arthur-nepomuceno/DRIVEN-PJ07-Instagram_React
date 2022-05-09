@@ -27,8 +27,7 @@ export default function Sugestoes(){
             <div class="titulo">
                 Sugestões para você
                 <div>Ver tudo</div>
-            </div>
-                        
+            </div>                        
             {sugestoes.map(element => <Sugestao src={element.src} 
                                                 nome={element.nome} 
                                                 razao={element.razao}/>)}
